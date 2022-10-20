@@ -1,4 +1,4 @@
-// Programa básico para trabalhar com a lida e escrita de arquivos, no caso uma lista de produtos
+// Programa básico para ler e escrever arquivos, no caso uma lista de produtos
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -66,7 +66,7 @@ int main() {  // Faz o alocamento de memória e implementa as funções
 	int qtd;
 	printf("Insira a quantidade de produtos a serem criados: ");
 	scanf("%d",&qtd);
-	t_produto *prods = malloc(qtd*sizeof(t_produto));  //variável dinâmica
+	t_produto *prods = malloc(qtd*sizeof(t_produto));  // Variável dinâmica
 	
 	for(int i=0;i<qtd;i++){
 		preencher(&prods[i]);
